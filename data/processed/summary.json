@@ -1,0 +1,112 @@
+{
+  "dataset": {
+    "source": "https://www.kaggle.com/datasets/mursideyarkin/mobile-games-ab-testing-cookie-cats",
+    "mirror": "https://raw.githubusercontent.com/ryanschaub/Mobile-Games-A-B-Testing-with-Cookie-Cats/master/cookie_cats.csv",
+    "sha256": "5ab54d761fbddcd50de7b88e4eaf7837cba4569474f50c043a4d17ee342c46bd",
+    "n_users": 90189,
+    "n_control": 44700,
+    "n_treatment": 45489,
+    "duplicated_userid": 0,
+    "tier_rule": {
+      "p50": 18.0,
+      "p90": 140.0,
+      "p99": 499.0,
+      "outlier_cut": 1073.6240000000107
+    }
+  },
+  "srm": {
+    "n_control": 44700,
+    "n_treatment": 45489,
+    "expected_ratio": 0.5,
+    "observed_ratio": 0.49562585237667567,
+    "diff_pp": 0.43741476233243315,
+    "chi2": 6.9024049496058275,
+    "p_value": 0.008607987810836262,
+    "is_srm": 0.0,
+    "warning": true
+  },
+  "tests": {
+    "retention_1": {
+      "rate_control": 0.4481879194630872,
+      "rate_treatment": 0.44228274967574577,
+      "diff_pp": -0.5905169787341458,
+      "relative_lift_pct": -1.317565585974659,
+      "ci_low_pp": -1.2392439449445216,
+      "ci_high_pp": 0.058209987476230164,
+      "z": -1.7840862247974725,
+      "p_value": 0.07440965529691913
+    },
+    "retention_7": {
+      "rate_control": 0.19020134228187918,
+      "rate_treatment": 0.18200004396667327,
+      "diff_pp": -0.8201298315205913,
+      "relative_lift_pct": -4.311903489646016,
+      "ci_low_pp": -1.3281552418885545,
+      "ci_high_pp": -0.3121044211526281,
+      "z": -3.164358912748191,
+      "p_value": 0.001554249975614329
+    }
+  },
+  "bootstrap": {
+    "retention_1": {
+      "ci_low_pp": -1.2408254056847716,
+      "ci_high_pp": 0.06697330470483269,
+      "p_lower": 0.9596
+    },
+    "retention_7": {
+      "ci_low_pp": -1.3366105176839722,
+      "ci_high_pp": -0.3003353749803976,
+      "p_lower": 0.9992
+    }
+  },
+  "bayes": {
+    "retention_1": {
+      "ci_low_pp": -1.2431442877905519,
+      "ci_high_pp": 0.05936007874767088,
+      "p_lower": 0.96267
+    },
+    "retention_7": {
+      "ci_low_pp": -1.3294461460850993,
+      "ci_high_pp": -0.3110003378824293,
+      "p_lower": 0.999195
+    }
+  },
+  "rounds": {
+    "mwu": {
+      "U": 1009027049.5,
+      "p_value": 0.05020880772044255,
+      "rank_biserial": -0.007526563813175513
+    },
+    "full_ci": [
+      -4.109312866293652,
+      0.9670344996009739
+    ],
+    "trim_ci": [
+      -1.493679663314427,
+      0.925439265516877
+    ],
+    "full_p_lower": 0.8035,
+    "trim_p_lower": 0.6812,
+    "n_excluded": 91
+  },
+  "gini_rounds": 0.7085481370704849,
+  "power": {
+    "baseline_d7": 0.19020134228187918,
+    "n_per_arm": 44700,
+    "mde_now_pp": 0.7408795259295706,
+    "required_n_for_0.5pp": 97681.29085544155,
+    "required_n_for_0.3pp": 270265.29288530635
+  },
+  "figures": [
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\01_srm.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\02_retention_compare.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\03_bootstrap_retention.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\04_rounds_distribution.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\05_rounds_sensitivity.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\06_bayes_posterior.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\07_tier_retention.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\08_concentration.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\09_power_mde.png",
+    "D:\\Homeworks\\game-ops-analytics\\reports\\figures\\10_funnel.png"
+  ]
+}

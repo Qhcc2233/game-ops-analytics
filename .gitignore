@@ -1,0 +1,7 @@
+# 真实数据集 cookie_cats.csv 体积仅 2.7MB，随仓库一起发布以保证一键复现
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+.DS_Store

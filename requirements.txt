@@ -1,0 +1,10 @@
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+streamlit>=1.50
+tabulate>=0.9
+# 可选：重新执行 EDA notebook
+nbformat>=5.9
+nbconvert>=7.10
+ipykernel>=6.25
